@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color:black;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color:#fa26b0;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.margin {margin: 4cm;}
+h1 { font-family: Yellowtail; font-size: 70px; font-style: normal; font-variant: normal; font-weight: 700;text-align: center; color: #fa26b0; } 
+.bar  { font-family: Yellowtail; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700;text-align: center; color: #fa26b0; } 
+
+    </style>
+
+    <title>Movies & TV Shows</title>
+</head>
+<body>
+    <div class="sidebar">
+      <h1 class="bar">
+
+          <a class="active" href="movies.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="info.html">About</a>
+          <a href="main.html">Previous page</a>
+        </h1>  
+        </div>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
+
+      <div class="content">
+        <div class="margin">
+<h1>MOVIES</h1>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://images.penguinrandomhouse.com/cover/9780425288290"width="300" height="400" >
+            </div>
+            <div class="column">
+                <img src="https://pics.filmaffinity.com/The_Hate_U_Give-164707734-large.jpg"width="300" height="400">
+            </div>
+            <div class="column">
+                <img src="https://assets.voxcinemas.com/posters/P_HO00007495.jpg"width="300" height="400">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+                <img src="https://assets.voxcinemas.com/posters/P_HO00005980.jpg"width="300" height="400">
+            </div>
+            <div class="column">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjQ5NjA2NDg1MV5BMl5BanBnXkFtZTgwMDAzNDc4MjI@._V1_.jpg"width="300" height="400">
+            </div>
+            <div class="column">
+                <img src="https://www.albiladdailyeng.com/wp-content/uploads/2020/02/9053136B-4600-41E8-95C8-8EF39F2A75AF.jpeg"width="300" height="400">
+            </div>
+          </div>
+
+
+         <div class="margin">
+<H1>TV SHOWS</H1>
+         </div>
+
+          <div class="row">
+            <div class="column">
+                <img src="https://tvguide1.cbsistatic.com/feed/1/836/11966836.jpg"width="300" height="400" >
+            </div>
+            <div class="column">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/On_My_Block_%28TV_series%29.png"width="300" height="400">
+            </div>
+            <div class="column">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_.jpg"width="300" height="400">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+                <img src="https://cdn1.edgedatg.com/aws/v2/abc/ModernFamily/showimages/ae9e9c4eb43a0e33b3b79e4e4753b658/634x848-Q90_ae9e9c4eb43a0e33b3b79e4e4753b658.jpg"width="300" height="400">
+            </div>
+            <div class="column">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/How_to_Get_Away_with_Murder_season_4_poster.jpg"width="300" height="400">
+            </div>
+            <div class="column">
+                <img src="https://www.lancerspiritonline.com/wp-content/uploads/2020/06/outer-banks.jpg"width="300" height="400">
+            </div>
+          </div>
+
+
+      </div>
+</body>
+</html>
